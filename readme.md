@@ -1,7 +1,22 @@
-# 摘要
+# A fast image encryption algorithm with variable key space
+This project is an implementation of the paper "A fast image encryption algorithm with variable key space".
 
-# 运行环境
+## Running environment
+Run the code on MATLAB.
 
-# 测试
+## Test
+* Download the project.
+* Run test.m, you will see the test results.
 
-# 引用
+## The paper corresponding to the code
+If you have referenced or used the code, please cite the paper, BibTeX as follows:
+```
+@article{sun2023xxxxx,
+  title={A fast image encryption algorithm with variable key space},
+  author={Sun, Xiyu and Chen, Zhong},
+  journal={Multimedia Tools and Applications},
+  pages={xxx-xxx},
+  year={2023},
+  publisher={Springer}
+}
+```

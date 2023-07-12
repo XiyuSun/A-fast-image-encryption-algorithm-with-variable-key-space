@@ -18,8 +18,7 @@ function kimg=img_decrypt(img_path,img,key)
     [P1, P2] = crossSampleToSeq(k,L);
     [K1, K2] = perturbationHenon2K(k, L); 
     
-    % 第一次逆扩散 
-    K2 = uint8(K2);
+    % 第一次逆扩散
     for i = L:-1:2
         M(i) = bitxor(bitxor(M(i),M(i-1)),K2(i));
     end
@@ -29,7 +28,7 @@ function kimg=img_decrypt(img_path,img,key)
     M(P2) = M;
     
     % 第二次逆扩散  
-    M = double(M);   
+    M = double(M); 
     for i = L:-1:2        
         M(i) = mod(M(i)-M(i-1)-K1(i),256);        
     end

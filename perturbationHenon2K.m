@@ -24,7 +24,8 @@ function [K1, K2] = perturbationHenon2K(k, L)
     m1 = min(x);
     m2 = min(y);
     K1 = floor(255.9999*(x-m1)/(max(x)-m1));
-    K2 = floor(255.9999*(y-m2)/(max(y)-m2));
+    K2 = floor(255.9999*(y-m2)/(max(y)-m2));    
+    K2 = uint8(K2);
 end
 
 

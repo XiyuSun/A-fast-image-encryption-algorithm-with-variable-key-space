@@ -4,10 +4,10 @@ imgPath = 'Lena.tiff';
 
 img = imread(imgPath);
 img = rgb2gray(img);
-img = imresize(img,[1024,1024]);
-% tic
+img = imresize(img,[256,256]);
+tic
 [simg,skey] = img_encrypt([],img,key);
-% toc
+toc
 % tic
 kimg = img_decrypt([],simg,key);
 % toc

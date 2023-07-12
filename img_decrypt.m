@@ -35,6 +35,7 @@ function kimg=img_decrypt(img_path,img,key)
     M(1) = mod(M(1)-sum(M(2:end))-K1(1),256);
     
     % 第二次逆排列
+    M = uint8(M);
     M(P1) = M;        
     
     % 重构图像
